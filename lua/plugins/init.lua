@@ -24,6 +24,7 @@ return {
         "eslint",
         "emmet_ls",
         "intelephense",
+        "marksman",
       },
     },
   },
@@ -36,9 +37,30 @@ return {
         "prettier",
         "stylua",
         "pint",
+        "markdownlint",
       },
       auto_install = true,
     },
+  },
+
+  {
+    "MeanderingProgrammer/render-markdown.nvim",
+    ft = { "markdown" },
+    dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" },
+    opts = {},
+  },
+
+  {
+    "dhruvasagar/vim-table-mode",
+    ft = { "markdown" },
+  },
+
+  {
+    "mfussenegger/nvim-lint",
+    event = { "BufReadPre", "BufNewFile" },
+    config = function()
+      require "configs.lint"
+    end,
   },
 
   {
@@ -71,6 +93,8 @@ return {
         "php",
         "php_only",
         "blade",
+        "markdown",
+        "markdown_inline",
       },
       autotag = {
         enable = true,
@@ -127,5 +151,15 @@ return {
 
   {
     "dsznajder/vscode-es7-javascript-react-snippets",
+  },
+
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && npm install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" },
   },
 }

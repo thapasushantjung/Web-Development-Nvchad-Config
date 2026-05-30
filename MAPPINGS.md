@@ -34,6 +34,14 @@ Laravel-specific integration and pickers.
 | `<leader>la` | `Laravel.pickers.artisan()` | Open Artisan Picker |
 | `<leader>lr` | `Laravel.pickers.routes()`  | Open Routes Picker |
 
+## Markdown Support
+Enhanced editing and previewing for Markdown files.
+
+| Key | Action | Description |
+|-----|--------|-------------|
+| `<leader>mp` | `:MarkdownPreviewToggle` | Toggle live browser preview |
+| `<leader>tm` | `:TableModeToggle`       | Toggle table creation mode |
+
 ## UI & Buffers (NvChad Defaults)
 These are standard NvChad mappings for reference.
 

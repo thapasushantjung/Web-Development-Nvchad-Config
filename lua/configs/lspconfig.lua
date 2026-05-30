@@ -1,7 +1,7 @@
 local nvlsp = require "nvchad.configs.lspconfig"
 nvlsp.defaults()
 
-local servers = { "html", "cssls", "ts_ls", "tailwindcss", "eslint", "emmet_ls", "intelephense" }
+local servers = { "html", "cssls", "ts_ls", "tailwindcss", "eslint", "emmet_ls", "intelephense", "marksman" }
 
 -- Use the new vim.lsp API to avoid deprecation warnings in Neovim 0.11+
 for _, lsp in ipairs(servers) do

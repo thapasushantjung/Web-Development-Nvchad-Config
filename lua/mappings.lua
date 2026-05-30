@@ -17,3 +17,9 @@ map("n", "<leader><leader>c", "<cmd>HopChar1<cr>", { desc = "Hop Char1" })
 
 -- LazyGit mapping
 map("n", "<leader>lg", "<cmd>LazyGit<cr>", { desc = "LazyGit" })
+
+-- Markdown Preview mapping
+map("n", "<leader>mp", "<cmd>MarkdownPreviewToggle<cr>", { desc = "Markdown Preview" })
+
+-- Table Mode mapping
+map("n", "<leader>tm", "<cmd>TableModeToggle<cr>", { desc = "Toggle Table Mode" })

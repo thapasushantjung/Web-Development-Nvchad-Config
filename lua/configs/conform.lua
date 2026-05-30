@@ -8,6 +8,7 @@ local options = {
     javascriptreact = { "prettier" },
     typescriptreact = { "prettier" },
     php = { "pint" },
+    markdown = { "prettier" },
   },
 
   format_on_save = {
